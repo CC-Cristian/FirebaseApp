@@ -1,20 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="horizontal-container">
+    <ion-card class="contenido">
+      <ion-button fill="outline" (click)="turnOnLed1()" [color]="buttonColorOn(ledControl)">
+        <ion-icon slot="start" name="bulb" [color]="buttonColorOn(ledControl)"></ion-icon>
+        PRENDER
+      </ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-button fill="outline" (click)="turnOffLed1()" [color]="buttonColorOff(led1On)">
+        <ion-icon slot="start" name="bulb-outline" [color]="buttonColorOff(led1On)"></ion-icon>
+        APAGAR
+        
+      </ion-button>
+    </ion-card>
+
+    <ion-card class="contenido">
+      <ion-button fill="outline" (click)="turnOnLed2()" [color]="buttonColorOn(led2On)">
+        <ion-icon slot="start" name="bulb" [color]="buttonColorOn(led2On)"></ion-icon>
+        PRENDER
+      </ion-button>
+
+      <ion-button fill="outline" (click)="turnOffLed2()" [color]="buttonColorOff(led3On)">
+        <ion-icon slot="start" name="bulb-outline" [color]="buttonColorOff(led1On)"></ion-icon>
+        APAGAR
+        
+      </ion-button>
+    </ion-card>
+
+    <ion-card class="contenido">
+      <ion-button fill="outline" (click)="turnOnLed3()" [color]="buttonColorOn(led4On)">
+        <ion-icon slot="start" name="bulb" [color]="buttonColorOn(led4On)"></ion-icon>
+        PRENDER
+      </ion-button>
+
+      <ion-button fill="outline" (click)="turnOffLed3()" [color]="buttonColorOff(led5On)">
+        <ion-icon slot="start" name="bulb-outline" [color]="buttonColorOff(led1On)"></ion-icon>
+        APAGAR
+        
+      </ion-button>
+    </ion-card>
+
+    <ion-card class="contenido">
+      <ion-button fill="outline" (click)="turnOnAllLeds()" [color]="buttonColorOn(allOn)">
+        <ion-icon slot="start" name="bulb" [color]="buttonColorOn(allOn)"></ion-icon>
+        PRENDER TODO
+      </ion-button>
+
+      <ion-button fill="outline" (click)="turnOffAllLeds()" [color]="buttonColorOff(allOff)">
+        <ion-icon slot="start" name="bulb-outline" [color]="buttonColorOff(led1On)"></ion-icon>
+        APAGAR TODO
+        
+      </ion-button>
+    </ion-card>
   </div>
 </ion-content>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "botonesleds": {
+      "hosting": {
+        "app": [
+          "botonesleds"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "botonesleds"
+  }
+}
